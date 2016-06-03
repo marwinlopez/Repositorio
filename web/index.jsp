@@ -27,7 +27,7 @@
                             <span ></span> <span class="chevron"></span>
                         </li>
                         <li data-target="#step3">
-                            <span ></span>Mis datos<span class="chevron"></span>
+                            <span ></span>Hola<span class="chevron"></span>
                         </li>
                          <li data-target="" class="espacio">
                             <span class="badge"></span> <span class="chevron"></span>
