@@ -27,10 +27,10 @@ public class ObjectFactory {
     private final static QName _Error_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "Error");
     private final static QName _Token_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "Token");
     private final static QName _TokenReferencia_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "referencia");
-    private final static QName _TokenPassword_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "password");
     private final static QName _TokenUsuario_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "usuario");
-    private final static QName _ErrorStackTrace_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "StackTrace");
+    private final static QName _TokenPassword_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "password");
     private final static QName _ErrorOrigen_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "Origen");
+    private final static QName _ErrorStackTrace_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "StackTrace");
     private final static QName _ErrorMensaje_QNAME = new QName("http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", "Mensaje");
 
     /**
@@ -87,15 +87,6 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "password", scope = Token.class)
-    public JAXBElement<String> createTokenPassword(String value) {
-        return new JAXBElement<String>(_TokenPassword_QNAME, String.class, Token.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "usuario", scope = Token.class)
     public JAXBElement<String> createTokenUsuario(String value) {
         return new JAXBElement<String>(_TokenUsuario_QNAME, String.class, Token.class, value);
@@ -105,9 +96,9 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "StackTrace", scope = Error.class)
-    public JAXBElement<String> createErrorStackTrace(String value) {
-        return new JAXBElement<String>(_ErrorStackTrace_QNAME, String.class, Error.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "password", scope = Token.class)
+    public JAXBElement<String> createTokenPassword(String value) {
+        return new JAXBElement<String>(_TokenPassword_QNAME, String.class, Token.class, value);
     }
 
     /**
@@ -117,6 +108,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "Origen", scope = Error.class)
     public JAXBElement<String> createErrorOrigen(String value) {
         return new JAXBElement<String>(_ErrorOrigen_QNAME, String.class, Error.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Abaseguros.AutoConnect", name = "StackTrace", scope = Error.class)
+    public JAXBElement<String> createErrorStackTrace(String value) {
+        return new JAXBElement<String>(_ErrorStackTrace_QNAME, String.class, Error.class, value);
     }
 
     /**

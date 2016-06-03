@@ -103,8 +103,8 @@
                                 <div class="col-sm-7">
                                     
                                 <p  style="margin-top: 40px">
-                                    <a href="#openModal">
-                                  <button type="button" style=" text-align: center; background-color: #95C21F; border-color: #95C21F" href="" class="btn btn-sm btn-primary"  name="" value="" id="">Haz click aquí</button></a>
+                                    
+                                    <button  type="button" id="modalMensaje" style=" text-align: center; background-color: #95C21F; border-color: #95C21F" class="btn btn-sm btn-primary"  name="" value="" id="">Haz click aquí</button>
  <h2><span id="errmsg" style="color: red"></span></h2>
                                 </p>
                                 
@@ -176,49 +176,33 @@
     
     
     <!--/#action-->
-	<section >
-        <div class="vertical-center sun">
-             <div class="container">
-                <div class="row">
-                    <div class="action">
-                        <div class="col-sm-12">
-
-                            <div id="openModal" class="modalDialog">
-                                <div>	<a href="#close" title="Close" class="close">X</a>
-                              <form id="frmcorreo" name="frmcorreo" method="POST" action="" class="contact">
-    <fieldset class="contact-inner" style="padding-top: 10px">
-      
-
-      <p class="contact-input" >
-          <h2 class="page-header">No encontraste tu automovil?</h2>
-
-          <h3 class="page-header">Envianos tus datos...</h3>
-          
-        <label style="width: 100px" for=”nombre”>Nombre:</label>
-        <input id="nombre" style="width: 300px" type="text" name="name" placeholder="Nombre" autofocus></br>
-        <label style="width: 100px" for=”marca”>Marca:</label>
-        <input id="marca" style="width: 300px" type="text" name="name" placeholder="Marca" autofocus></br>
-        <label style="width: 100px" for=”modelo”>Modelo:</label>
-        <input id="modelo" style="width: 300px" type="text" name="name" placeholder="Modelo" autofocus></br>
-        <label style="width: 100px" for=”anio”>A&ntilde;o:</label>
-        <input id="anio" style="width: 300px" type="text" name="name" placeholder="Año" autofocus onkeypress="ValidarNumero()" ></br>
-        <label style="width: 100px" for=”correo”>Correo:</label>
-        <input id="correo" style="width: 300px" type="email" name="name" placeholder="Correo" autofocus onkeyup="habilitarEnvio()"></br>
-        
-      <p class="contact-submit">
-        <p style="text-align: right"><button id="btncorreo" name="btncorreo" type="submit" class="btn btn-sm btn-primary" style="text-align: right">Enviar</button></p>
-      </p>
-      <h2><div id="mensajecorreo"></div></h2>
-    </fieldset>
-  </form>  
-                            </div>
-                            
-                        </div>                        
-                    </div>
-                </div>
+    <div class="mensaje">
+        <div>
+            <div class="cuerpo2">
+                <form id="frmcorreo" name="frmcorreo" method="POST" action="" class="contact">
+                    <fieldset class="contact-inner">
+                      <p class="contact-input" >
+                      <h2 class="page-header">No encontraste tu automovil?</h2>
+                      <h3 class="page-header">Envianos tus datos...</h3>
+                        <label style="width: 100px" for=”nombre”>Nombre:</label>
+                        <input id="nombre" style="width: 300px" type="text" name="name" placeholder="Nombre" autofocus></br>
+                        <label style="width: 100px" for=”marca”>Marca:</label>
+                        <input id="marca" style="width: 300px" type="text" name="name" placeholder="Marca" autofocus></br>
+                        <label style="width: 100px" for=”modelo”>Modelo:</label>
+                        <input id="modelo" style="width: 300px" type="text" name="name" placeholder="Modelo" autofocus></br>
+                        <label style="width: 100px" for=”anio”>A&ntilde;o:</label>
+                        <input id="anio" style="width: 300px" type="text" name="name" placeholder="Año" autofocus onkeypress="ValidarNumero()" ></br>
+                        <label style="width: 100px" for=”correo”>Correo:</label>
+                        <input id="correo" style="width: 300px" type="email" name="name" placeholder="Correo" autofocus onkeyup="habilitarEnvio()"></br>
+                      <p class="contact-submit">
+                        <p style="text-align: right"><button id="btncorreo" name="btncorreo" type="button" class="btn btn-sm btn-primary" style="text-align: right">Enviar</button></p>
+                      </p>
+                      <h2><div id="mensajecorreo"></div></h2>
+                    </fieldset>
+                  </form>                  
             </div>
         </div>
-   </section>
+    </div>
     <!--/#action-->
     
     <div class="modalAlerta" ><!-- Place at bottom of page -->

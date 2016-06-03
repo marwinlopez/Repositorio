@@ -24,8 +24,8 @@ public class IACCatalogosObtenerMarcasErrorFaultFaultMessage
 
     /**
      * 
-     * @param message
      * @param faultInfo
+     * @param message
      */
     public IACCatalogosObtenerMarcasErrorFaultFaultMessage(String message, Error faultInfo) {
         super(message);
@@ -34,9 +34,9 @@ public class IACCatalogosObtenerMarcasErrorFaultFaultMessage
 
     /**
      * 
-     * @param message
      * @param faultInfo
      * @param cause
+     * @param message
      */
     public IACCatalogosObtenerMarcasErrorFaultFaultMessage(String message, Error faultInfo, Throwable cause) {
         super(message, cause);

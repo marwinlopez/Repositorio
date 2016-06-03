@@ -89,6 +89,17 @@ vertical-align: middle;
     background: rgba( 0, 0, 0, 0.8 );
 }
 
+.mensaje{
+    display:    none; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
 body.loading {
@@ -200,6 +211,19 @@ body.loading .modal {
     width: 1000px;
     position: relative;
     margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #000082;
+    
+}
+
+.mensaje> div {
+    width: 520px;
+    position: relative;
+    margin: 15% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #FFFFFF;

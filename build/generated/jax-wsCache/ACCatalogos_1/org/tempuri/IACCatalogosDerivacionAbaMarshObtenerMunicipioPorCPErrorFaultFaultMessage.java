@@ -24,8 +24,8 @@ public class IACCatalogosDerivacionAbaMarshObtenerMunicipioPorCPErrorFaultFaultM
 
     /**
      * 
-     * @param message
      * @param faultInfo
+     * @param message
      */
     public IACCatalogosDerivacionAbaMarshObtenerMunicipioPorCPErrorFaultFaultMessage(String message, Error faultInfo) {
         super(message);
@@ -34,9 +34,9 @@ public class IACCatalogosDerivacionAbaMarshObtenerMunicipioPorCPErrorFaultFaultM
 
     /**
      * 
-     * @param message
      * @param faultInfo
      * @param cause
+     * @param message
      */
     public IACCatalogosDerivacionAbaMarshObtenerMunicipioPorCPErrorFaultFaultMessage(String message, Error faultInfo, Throwable cause) {
         super(message, cause);

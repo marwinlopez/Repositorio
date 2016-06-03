@@ -25,23 +25,15 @@ import org.datacontract.schemas._2004._07.abaseguros.Token;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _EntradaStrEntrada_QNAME = new QName("http://tempuri.org/", "strEntrada");
     private final static QName _Token_QNAME = new QName("http://tempuri.org/", "Token");
     private final static QName _SalidaStrSalida_QNAME = new QName("http://tempuri.org/", "strSalida");
+    private final static QName _EntradaStrEntrada_QNAME = new QName("http://tempuri.org/", "strEntrada");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.tempuri
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link Entrada }
-     * 
-     */
-    public Entrada createEntrada() {
-        return new Entrada();
     }
 
     /**
@@ -53,12 +45,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link Entrada }
      * 
      */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "strEntrada", scope = Entrada.class)
-    public JAXBElement<String> createEntradaStrEntrada(String value) {
-        return new JAXBElement<String>(_EntradaStrEntrada_QNAME, String.class, Entrada.class, value);
+    public Entrada createEntrada() {
+        return new Entrada();
     }
 
     /**
@@ -77,6 +68,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://tempuri.org/", name = "strSalida", scope = Salida.class)
     public JAXBElement<String> createSalidaStrSalida(String value) {
         return new JAXBElement<String>(_SalidaStrSalida_QNAME, String.class, Salida.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "strEntrada", scope = Entrada.class)
+    public JAXBElement<String> createEntradaStrEntrada(String value) {
+        return new JAXBElement<String>(_EntradaStrEntrada_QNAME, String.class, Entrada.class, value);
     }
 
 }

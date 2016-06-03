@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _COTIZACIONAUTOSREQUEST_QNAME = new QName("http://webservices.zurich.com.mx/", "COTIZACION_AUTOS_REQUEST");
     private final static QName _COTIZACIONAUTOSRESPONSE_QNAME = new QName("http://webservices.zurich.com.mx/", "COTIZACION_AUTOS_RESPONSE");
+    private final static QName _COTIZACIONAUTOSREQUEST_QNAME = new QName("http://webservices.zurich.com.mx/", "COTIZACION_AUTOS_REQUEST");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: mx.com.zurich.webservices
@@ -51,6 +51,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link COBERTURAType }
+     * 
+     */
+    public COBERTURAType createCOBERTURAType() {
+        return new COBERTURAType();
+    }
+
+    /**
+     * Create an instance of {@link PAQUETEType }
+     * 
+     */
+    public PAQUETEType createPAQUETEType() {
+        return new PAQUETEType();
+    }
+
+    /**
+     * Create an instance of {@link COBERTURAREQType }
+     * 
+     */
+    public COBERTURAREQType createCOBERTURAREQType() {
+        return new COBERTURAREQType();
+    }
+
+    /**
      * Create an instance of {@link FORMAPAGOType }
      * 
      */
@@ -67,27 +91,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PAQUETEType }
+     * Create an instance of {@link JAXBElement }{@code <}{@link SOLICITUDCOTAUTOSRESType }{@code >}}
      * 
      */
-    public PAQUETEType createPAQUETEType() {
-        return new PAQUETEType();
-    }
-
-    /**
-     * Create an instance of {@link COBERTURAType }
-     * 
-     */
-    public COBERTURAType createCOBERTURAType() {
-        return new COBERTURAType();
-    }
-
-    /**
-     * Create an instance of {@link COBERTURAREQType }
-     * 
-     */
-    public COBERTURAREQType createCOBERTURAREQType() {
-        return new COBERTURAREQType();
+    @XmlElementDecl(namespace = "http://webservices.zurich.com.mx/", name = "COTIZACION_AUTOS_RESPONSE")
+    public JAXBElement<SOLICITUDCOTAUTOSRESType> createCOTIZACIONAUTOSRESPONSE(SOLICITUDCOTAUTOSRESType value) {
+        return new JAXBElement<SOLICITUDCOTAUTOSRESType>(_COTIZACIONAUTOSRESPONSE_QNAME, SOLICITUDCOTAUTOSRESType.class, null, value);
     }
 
     /**
@@ -97,15 +106,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://webservices.zurich.com.mx/", name = "COTIZACION_AUTOS_REQUEST")
     public JAXBElement<SOLICITUDCOTAUTOSREQType> createCOTIZACIONAUTOSREQUEST(SOLICITUDCOTAUTOSREQType value) {
         return new JAXBElement<SOLICITUDCOTAUTOSREQType>(_COTIZACIONAUTOSREQUEST_QNAME, SOLICITUDCOTAUTOSREQType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link SOLICITUDCOTAUTOSRESType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservices.zurich.com.mx/", name = "COTIZACION_AUTOS_RESPONSE")
-    public JAXBElement<SOLICITUDCOTAUTOSRESType> createCOTIZACIONAUTOSRESPONSE(SOLICITUDCOTAUTOSRESType value) {
-        return new JAXBElement<SOLICITUDCOTAUTOSRESType>(_COTIZACIONAUTOSRESPONSE_QNAME, SOLICITUDCOTAUTOSRESType.class, null, value);
     }
 
 }

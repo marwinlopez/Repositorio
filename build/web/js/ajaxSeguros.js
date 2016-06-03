@@ -140,7 +140,7 @@ $(document).ready(function(){
                }
             }
         });
-       document.getElementById("frmcorreo").action='index';
+       $(".mensaje").css("display","none");
    });
    
    $('#CodigoPostal').keypress(function(e){
@@ -150,6 +150,9 @@ $(document).ready(function(){
        }else{
            $('#CodigoPostal').css("border","1px solid #ccc");
        }
+    });
+    $('#modalMensaje').on('click',function(){
+        $(".mensaje").css("display","block");
     });
 });
 
