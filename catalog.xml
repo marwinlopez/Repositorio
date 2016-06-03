@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service?wsdl" uri="src/conf/xml-resources/web-service-references/service/wsdl/pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service.wsdl"/>
+    <system systemId="http://pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service.xsd2.xsd" uri="src/conf/xml-resources/web-service-references/service/wsdl/pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service.xsd2.xsd"/>
+    <system systemId="http://pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service.xsd3.xsd" uri="src/conf/xml-resources/web-service-references/service/wsdl/pruebas.autolinea.ezurich.com.mx/ZurichWS_QA/WSCotizacionAutos/service.xsd3.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCotizacion.svc?wsdl" uri="src/conf/xml-resources/web-service-references/ACCotizacion/wsdl/www5.abaseguros.com/AutoConnect/ACCotizacion.svc.wsdl"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCotizacion.svc?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/ACCotizacion/wsdl/www5.abaseguros.com/AutoConnect/ACCotizacion.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCotizacion.svc?xsd=xsd2" uri="src/conf/xml-resources/web-service-references/ACCotizacion/wsdl/www5.abaseguros.com/AutoConnect/ACCotizacion.svc.xsd_xsd2.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCotizacion.svc?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/ACCotizacion/wsdl/www5.abaseguros.com/AutoConnect/ACCotizacion.svc.xsd_xsd1.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCatalogos.svc" uri="src/conf/xml-resources/web-service-references/ACCatalogos/wsdl/www5.abaseguros.com/AutoConnect/ACCatalogos.svc.xml"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCatalogos.svc?wsdl" uri="src/conf/xml-resources/web-service-references/ACCatalogos_1/wsdl/www5.abaseguros.com/AutoConnect/ACCatalogos.svc.wsdl"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCatalogos.svc?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/ACCatalogos_1/wsdl/www5.abaseguros.com/AutoConnect/ACCatalogos.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCatalogos.svc?xsd=xsd2" uri="src/conf/xml-resources/web-service-references/ACCatalogos_1/wsdl/www5.abaseguros.com/AutoConnect/ACCatalogos.svc.xsd_xsd2.xsd"/>
+    <system systemId="http://www5.abaseguros.com/AutoConnect/ACCatalogos.svc?xsd=xsd1" uri="src/conf/xml-resources/web-service-references/ACCatalogos_1/wsdl/www5.abaseguros.com/AutoConnect/ACCatalogos.svc.xsd_xsd1.xsd"/>
+</catalog>

@@ -1,0 +1,608 @@
+html,html a {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+	font-family: Century Gothic, sans-serif;
+	
+}
+
+.modalCoberturas {
+    position: fixed;
+    font-family: Century Gothic, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalCoberturas:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalCoberturas > div {
+    width: 1060px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Century Gothic, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 560px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.modalDialogSiempre {
+    position: fixed;
+    font-family: Century Gothic, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialogSiempre:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialogSiempre > div {
+    width: 560px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+#frame {
+margin: auto;
+display: table;
+height: 100%;
+}
+#container2 {
+display: table-cell;
+vertical-align: middle;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
+.modalAlerta {
+    display:    none; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
+.modal {
+    display:    none; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
+.modalSiempre {
+    display:    none; 
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Century Gothic, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 560px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    
+}
+
+.modal > div {
+    width: 300px;
+    position: relative;
+    margin: 15% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    
+}
+.modalAlerta > div {
+    width: 300px;
+    position: relative;
+    margin: 15% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    
+}
+
+.cuerpo{
+    text-align: center;
+}
+
+.cuerpo2{
+    text-align: center;
+}
+
+
+.close {
+    background: #0e229c;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+/*************************
+*******Footer******
+**************************/
+
+#footer {
+  padding-bottom: 10px;
+  background: #0E6FB6;
+
+	background: -webkit-linear-gradient(top, #0066cc, #202091);
+	background: -moz-linear-gradient(top, #0066cc, #202091);
+	background: -o-linear-gradient(top, #0066cc, #202091);
+	background: -ms-linear-gradient(top, #0066cc, #202091);
+	background: linear-gradient(top, #0066cc, #202091);
+  
+  background-position: bottom;
+  background-size: contain;
+
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+
+}
+
+#footer h1{
+  margin-bottom: 65px;
+  margin-top: 36px;
+}
+
+#footer .bottom-separator {
+  margin-bottom: 60px;
+}
+
+#message {
+  height: 60px;
+  resize: none;
+}
+
+.bottom > h2 {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.bottom .media-body h3 {
+  margin-top: 0;
+  padding-left: 25px;
+}
+
+.bottom .media-body h3 a{
+  color: #ea2c00;
+}
+
+.contact-info.bottom {
+  padding-left: 25px;
+}
+
+.bottom > address {
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border: 1px solid #eaeaea;
+  font-weight: 300;
+  outline: none;
+  box-shadow: none;
+  height: 30px;
+}
+
+.form-control:hover, 
+.form-control:focus{
+  border-color: #4fcccd;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #0E6FB6;
+
+	background: -webkit-linear-gradient(top, #0066cc, #202091);
+	background: -moz-linear-gradient(top, #0066cc, #202091);
+	background: -o-linear-gradient(top, #0066cc, #202091);
+	background: -ms-linear-gradient(top, #0066cc, #202091);
+	background: linear-gradient(top, #0066cc, #202091);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 5px;
+  border-bottom: 3px solid #6571ff;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.btn-submit:hover, 
+.btn-submit:focus{
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  opacity: .8;
+}
+
+.btn-green-submit {
+  width: 100%;
+  background: #128d23;
+
+	background: -webkit-linear-gradient(top, #128d23, #0c6719);
+	background: -moz-linear-gradient(top, #128d23, #0c6719);
+	background: -o-linear-gradient(top, #128d23, #0c6719);
+	background: -ms-linear-gradient(top, #128d23, #0c6719);
+	background: linear-gradient(top, #128d23, #0c6719);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 5px;
+  border-bottom: 3px solid #19da34;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.btn-green-submit:hover, 
+.btn-green-submit:focus{
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  opacity: .8;
+}
+
+.copyright-text{
+  margin-top: 10px;
+  color: #000;
+  font-size: 16px;  
+  padding-bottom: 15px;
+}
+
+.copyright-text a {
+  color: #3e848a
+}
+
+.copyright-text p {
+  margin-bottom: 0;
+}
+
+
+#plans,#plans ul,#plans ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#pricePlans:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#pricePlans {
+	zoom: 1;
+}
+
+#pricePlans {
+	max-width: 83em;
+	margin: 0 auto;
+}
+
+#pricePlans #plans .plan {
+	background: #f9f9f9;
+	float: left;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.planContainer .title h2 {
+	font-size: 2.125em;
+	font-weight: 300;
+	color: #0E6FB6;
+	margin: 0;
+	padding: .6em 0;
+}
+
+.planContainer .title h2.bestPlanTitle {
+	background: #0E6FB6;
+
+	background: -webkit-linear-gradient(top, #0066cc, #202091);
+	background: -moz-linear-gradient(top, #0066cc, #202091);
+	background: -o-linear-gradient(top, #0066cc, #202091);
+	background: -ms-linear-gradient(top, #0066cc, #202091);
+	background: linear-gradient(top, #0066cc, #202091);
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+}
+
+
+.planContainer .price p {
+	background: #0E6FB6;
+
+	background: -webkit-linear-gradient(top, #0066cc, #202091);
+	background: -moz-linear-gradient(top, #0066cc, #202091);
+	background: -o-linear-gradient(top, #0066cc, #202091);
+	background: -ms-linear-gradient(top, #0066cc, #202091);
+	background: linear-gradient(top, #0066cc, #202091);
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	height: 2.6em;
+	line-height: 2.6em;
+	margin: 0 0 1em;
+}
+
+.planContainer .price p.bestPlanPrice {
+	background: #f7814d;
+}
+
+.planContainer .price p span {
+	color: #8394ae;
+}
+
+.planContainer .options {
+	margin-top: 10em;
+}
+
+.planContainer .options li {
+	font-weight: 700;
+	color: #364762;
+	line-height: 2.5;
+}
+
+.planContainer .options li span {
+	font-weight: 400;
+	color: #979797;
+}
+
+
+
+.planContainer .button a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0E6FB6;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 2.8em;
+	border: 2px solid #0E6FB6;
+	display: inline-block;
+	width: 80%;
+	height: 2.8em;
+	border-radius: 4px;
+	margin: 1.5em 0 1.8em;
+}
+
+.planContainer .button a.bestPlanButton {
+	color: #fff;
+	background: #f7814d;
+	border: 2px solid #f7814d;
+}
+
+#credits {
+	text-align: center;
+	font-size: .8em;
+	font-style: italic;
+	color: #777;
+}
+
+#credits a {
+	color: #333;
+}
+
+#credits a:hover {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}
+
+}
+
+@media screen and (min-width: 1025px) {
+
+#pricePlans {
+	margin: 2em auto;
+}
+
+#pricePlans #plans .plan {
+	width: 18%;
+	margin: 20px 1px 10px 10px;
+
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+#pricePlans #plans > li:last-child {
+	margin-right: 0;
+}
+
+#pricePlans #plans .plan:hover {
+	-webkit-transform: scale(1.04);
+	   -moz-transform: scale(1.04);
+	    -ms-transform: scale(1.04);
+	     -o-transform: scale(1.04);
+	        transform: scale(1.04);
+}
+
+.planContainer .button a {
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.planContainer .button a:hover {
+	background: #0E6FB6;
+	color: #fff;
+}
+
+.planContainer .button a.bestPlanButton:hover {
+	background: #ff9c70;
+	border: 2px solid #ff9c70;
+}
+
+}

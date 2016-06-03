@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://webservices.zurich.com.mx/" targetNamespace="http://webservices.zurich.com.mx/">
+<wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema>
+<xsd:import schemaLocation="service.xsd2.xsd" namespace="http://webservices.zurich.com.mx/"/>
+<xsd:import schemaLocation="service.xsd3.xsd" namespace="http://webservices.zurich.com.mx/"/></xsd:schema></wsdl:types>
+<wsdl:message name="getWSCotizacionAutosRequest">
+<wsdl:part name="part1" element="xsns:COTIZACION_AUTOS_REQUEST" xmlns:xsns="http://webservices.zurich.com.mx/"/></wsdl:message>
+<wsdl:message name="getWSCotizacionAutosResponse">
+<wsdl:part name="part1" element="xsns:COTIZACION_AUTOS_RESPONSE" xmlns:xsns="http://webservices.zurich.com.mx/"/></wsdl:message>
+<wsdl:portType name="WSCotizacionAutosType">
+<wsdl:operation name="getWSCotizacionAutos">
+<wsdl:input name="getWSCotizacionAutosRequest" message="ns0:getWSCotizacionAutosRequest"/>
+<wsdl:output name="getWSCotizacionAutosResponse" message="ns0:getWSCotizacionAutosResponse"/></wsdl:operation></wsdl:portType>
+<wsdl:binding name="WSCotizacionAutosBinding" type="ns0:WSCotizacionAutosType">
+<soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="getWSCotizacionAutos">
+<soap11:operation soapAction="" style="document"/>
+<wsdl:input name="getWSCotizacionAutosRequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="getWSCotizacionAutosResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation></wsdl:binding>
+<wsdl:service name="WSCotizacionAutosService">
+<wsdl:port name="WSCotizacionAutosServicePort" binding="ns0:WSCotizacionAutosBinding">
+<soap11:address location="http://pruebas.autolinea.ezurich.com.mx:80/ZurichWS_QA/WSCotizacionAutos/service"/></wsdl:port></wsdl:service></wsdl:definitions>

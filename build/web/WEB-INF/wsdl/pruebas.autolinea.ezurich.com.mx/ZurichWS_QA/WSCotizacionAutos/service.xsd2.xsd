@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservices.zurich.com.mx/" targetNamespace="http://webservices.zurich.com.mx/" elementFormDefault="qualified">
+    
+<complexType name="COBERTURA_REQ_Type">
+        
+<sequence>
+            
+<element name="id_cobertura">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="3"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="monto_asegurado">
+                
+<simpleType>
+                    
+<restriction base="decimal">
+                        
+<totalDigits value="10"/>
+                        
+<fractionDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="porcentaje_deducible">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_seleccion">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    
+<complexType name="RECOTIZACION_AUTOS_REQ_Type">
+        
+<sequence>
+            
+<element name="num_resquest">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="folio_cotizacion">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="8"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="porcentaje_descuento">
+                
+<simpleType>
+                    
+<restriction base="decimal">
+                        
+<totalDigits value="4"/>
+                        
+<fractionDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="porcentaje_recargo">
+                
+<simpleType>
+                    
+<restriction base="decimal">
+                        
+<totalDigits value="5"/>
+                        
+<fractionDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="prima_objetivo">
+                
+<simpleType>
+                    
+<restriction base="decimal">
+                        
+<totalDigits value="9"/>
+                        
+<fractionDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_paquete">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="3"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="COBERTURA_OPCIONAL" type="tns:COBERTURA_REQ_Type" minOccurs="0" maxOccurs="25"/>
+        </sequence>
+    </complexType>
+    
+<complexType name="SOLICITUD_COT_AUTOS_REQ_Type">
+        
+<sequence>
+            
+<element name="num_req">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="usuario">
+                
+<simpleType>
+                    
+<restriction base="string">
+                        
+<maxLength value="12"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="password">
+                
+<simpleType>
+                    
+<restriction base="string">
+                        
+<maxLength value="12"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="idOficina">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="programaComercial">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="9"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="tipoVehiculo">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="cve_zurich">
+                
+<simpleType>
+                    
+<restriction base="string">
+                        
+<maxLength value="13"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="modelo">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="4"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_estado">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_ciudad">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="3"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_tipoValor">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_tipoUso">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="cve_agente">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="6"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="tipo_producto">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="tipo_carga">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="tipo_persona">
+                
+<simpleType>
+                    
+<restriction base="string">
+                        
+<maxLength value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="edad">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="genero">
+                
+<simpleType>
+                    
+<restriction base="string">
+                        
+<maxLength value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="estadoCivil">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="ocupacion">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="5"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="giro">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="5"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="nacionalidad">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="3"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="id_moneda">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="1"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="fecha_inicio">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="8"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="fecha_fin" minOccurs="0">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="8"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="vigencia">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="monto_asegurado">
+                
+<simpleType>
+                    
+<restriction base="decimal">
+                        
+<totalDigits value="10"/>
+                        
+<fractionDigits value="2"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="codigoPostal">
+                
+<simpleType>
+                    
+<restriction base="int">
+                        
+<totalDigits value="7"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            
+<element name="CONDICIONES" type="tns:RECOTIZACION_AUTOS_REQ_Type" minOccurs="0" maxOccurs="1"/>
+        </sequence>
+    </complexType>
+    
+<element name="COTIZACION_AUTOS_REQUEST" type="tns:SOLICITUD_COT_AUTOS_REQ_Type"/>
+</schema>

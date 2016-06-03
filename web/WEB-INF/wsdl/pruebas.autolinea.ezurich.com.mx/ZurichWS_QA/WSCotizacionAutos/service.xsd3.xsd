@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservices.zurich.com.mx/" targetNamespace="http://webservices.zurich.com.mx/" elementFormDefault="qualified">
+	
+	
+<complexType name="COBERTURA_Type">
+		
+<sequence>
+			
+<element name="id_cobertura">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="3"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="descripcion_cobertura">
+				
+<simpleType>
+					
+<restriction base="string">
+						
+<maxLength value="40"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="tipo_cobertura">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="1"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="monto_asegurado">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="porcentaje_deducible">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="ppdm_deducible">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="prima">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="id_modifMonto">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="1"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="id_modifDeducible">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="1"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="id_seleccion">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="1"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="id_descBien">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="1"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="id_mensajeCob">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+	
+	
+<complexType name="FORMA_PAGO_Type">
+		
+<sequence>
+			
+<element name="id_forma_pago">
+				
+<simpleType>
+					
+<restriction base="string">
+						
+<maxLength value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="descripcion_forma_pago">
+				
+<simpleType>
+					
+<restriction base="string">
+						
+<maxLength value="30"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="numero_pagos">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="pago_inicial">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="pago_subsecuente">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="prima_neta">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="derechos">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="recargos">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="iva">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="prima_total">
+				
+<simpleType>
+					
+<restriction base="decimal">
+						
+<totalDigits value="10"/>
+						
+<fractionDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="PAQUETE_Type">
+		
+<sequence>
+			
+<element name="id_paquete">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="3"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="descripcion_paquete">
+				
+<simpleType>
+					
+<restriction base="string">
+						
+<maxLength value="40"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="COBERTURA" type="tns:COBERTURA_Type" minOccurs="0" maxOccurs="25"/>
+			
+<element name="FORMA_PAGO" type="tns:FORMA_PAGO_Type" minOccurs="0" maxOccurs="6"/>
+		</sequence>
+	</complexType>
+
+	
+<complexType name="SOLICITUD_COT_AUTOS_RES_Type">
+		
+<sequence>
+			
+<element name="status">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="3"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="mensaje">
+				
+<simpleType>
+					
+<restriction base="string">
+						
+<maxLength value="80"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="num_response">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="2"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="folio_cotizacion">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="8"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="seq_paquetes">
+				
+<simpleType>
+					
+<restriction base="int">
+						
+<totalDigits value="4"/>
+					</restriction>
+				</simpleType>
+			</element>
+			
+<element name="PAQUETE" type="tns:PAQUETE_Type" minOccurs="0" maxOccurs="10"/>
+		</sequence>
+	</complexType>
+	
+	
+<element name="COTIZACION_AUTOS_RESPONSE" type="tns:SOLICITUD_COT_AUTOS_RES_Type"/>
+
+</schema>
